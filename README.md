@@ -92,33 +92,6 @@ curl -X POST http://127.0.0.1:5000/api/tasks \
   -d '{"title": "Finish CV", "priority": "high", "due_date": "2026-07-20"}'
 ```
 
-## Deploying it live (for your CV)
-
-A working live link is far more impressive than a repo link alone. Two easy
-free options:
-
-**Render.com**
-1. Push this project to a GitHub repo
-2. Create a new "Web Service" on Render, connect the repo
-3. Build command: `pip install -r requirements.txt`
-4. Start command: `gunicorn app:app` (add `gunicorn` to `requirements.txt` first)
-
-**Railway.app**
-1. Push to GitHub, then "New Project → Deploy from GitHub repo" on Railway
-2. Railway auto-detects Flask; add the same start command as above
-
-Once deployed, put the link in your CV/LinkedIn as:
-*"Live demo: your-app.onrender.com"*
-
-## Possible Extensions
-
-If you want to keep building this out for your portfolio:
-- Task comments or activity log
-- Email reminders for due dates (e.g. with a scheduled job)
-- Task labels/tags and filtering
-- Unit tests with `pytest` (great to add — shows testing discipline)
-- Swap SQLite for PostgreSQL for a "production-grade" story
-
 ## Author
 
 Cameron Manipersad — [GitHub](https://github.com/CameronManipersad) ·
